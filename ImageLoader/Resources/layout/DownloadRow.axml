@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="40dp">
+    <TextView
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/fileTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fileTextView"
+        android:id="@+id/downloadProgressBar"
+        android:minHeight="40dp" />
+    <ImageButton
+        android:src="@drawable/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/cancelButton"
+        android:layout_below="@id/downloadProgressBar" />
+    <ImageButton
+        android:src="@drawable/control_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/cancelButton"
+        android:layout_below="@id/downloadProgressBar"
+        android:id="@+id/pauseButton" />
+    <ImageButton
+        android:src="@drawable/zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/pauseButton"
+        android:layout_below="@id/downloadProgressBar"
+        android:id="@+id/viewButton" />
+</RelativeLayout>

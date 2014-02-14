@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:maxHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topLayout">
+        <ImageButton
+            android:src="@drawable/download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/downloadButton" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fileTextBox"
+            android:layout_toLeftOf="@id/downloadButton"
+            android:minHeight="45dp"
+            android:autoText="false"
+            android:maxLines="1"
+            android:inputType="textUri" />
+    </RelativeLayout>
+    <ListView
+        android:minWidth="25dp"
+        android:minHeight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/downloadsListView"
+        android:layout_below="@id/topLayout" />
+</RelativeLayout>
